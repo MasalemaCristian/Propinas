@@ -42,5 +42,31 @@ fun CalculadoraPropinas() {
             fontSize = 26.sp
         )
 
+        Spacer(modifier = Modifier.height(20.dp))
+
+        TextField(
+            value = monto,
+            onValueChange = { monto = it },
+            label = { Text("Monto de la cuenta") }
+        )
+
+        Spacer(modifier = Modifier.height(15.dp))
+
+        Text(
+            text = "Selecciona el porcentaje"
+        )
+
+        Spacer(modifier = Modifier.height(15.dp))
+
+
+
+        Spacer(modifier = Modifier.height(25.dp))
+
+        Text(
+            text = "Propina calculada: $resultado  ($)",
+            fontSize = 22.sp
+        )
     }
-}
+
+
+    }
