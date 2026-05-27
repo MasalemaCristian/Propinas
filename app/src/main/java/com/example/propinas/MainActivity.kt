@@ -58,6 +58,43 @@ fun CalculadoraPropinas() {
 
         Spacer(modifier = Modifier.height(15.dp))
 
+        Row {
+
+            Button(
+                onClick = {
+
+                    val montoDouble = monto.toDoubleOrNull() ?: 0.0
+                    resultado = montoDouble * 0.10
+                }
+            ) {
+                Text("10%")
+            }
+
+            Spacer(modifier = Modifier.width(10.dp))
+
+            Button(
+                onClick = {
+
+                    val montoDouble = monto.toDoubleOrNull() ?: 0.0
+                    resultado = montoDouble * 0.15
+                }
+            ) {
+                Text("15%")
+            }
+
+            Spacer(modifier = Modifier.width(10.dp))
+
+            Button(
+                onClick = {
+
+                    val montoDouble = monto.toDoubleOrNull() ?: 0.0
+                    resultado = montoDouble * 0.20
+                }
+            ) {
+                Text("20%")
+            }
+        }
+
         Spacer(modifier = Modifier.height(25.dp))
 
         Text(
